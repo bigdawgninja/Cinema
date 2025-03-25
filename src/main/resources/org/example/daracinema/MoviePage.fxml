@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="638.0" prefWidth="1166.0" style="-fx-background-color: #0A0B0D;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.daracinema.MoviePageController">
+   <children>
+      <Button fx:id="reserveSeat" layoutX="964.0" layoutY="542.0" mnemonicParsing="false" onMouseClicked="#setReserveSeat" prefHeight="48.0" prefWidth="96.0" text="Reserve Seat" />
+      <TextArea fx:id="sypnosisID" editable="false" layoutX="749.0" layoutY="233.0" prefHeight="64.0" prefWidth="351.0" style="-fx-background-color: #0A0B0D;" stylesheets="@styleSheet.css" />
+      <Button fx:id="mainMenuButton" layoutX="25.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#mainMenuButtonAction" prefHeight="33.0" prefWidth="78.0" text="Main Menu" />
+      <Label layoutX="513.0" layoutY="145.0" text="Mario and Dara Cinema" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="posterImage" fitHeight="171.0" fitWidth="212.0" layoutX="118.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="movieTitle" layoutX="96.0" layoutY="494.0" prefHeight="48.0" prefWidth="299.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="movieDuration" layoutX="96.0" layoutY="566.0" prefHeight="33.0" prefWidth="299.0" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="110.0" fitWidth="198.0" layoutX="491.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Logo.png" />
+         </image>
+      </ImageView>
+      <MenuButton fx:id="loginButton" layoutX="1004.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#loginButton" text="User">
+         <items>
+            <MenuItem fx:id="loginMenuItem" onAction="#loginButton" text="Log In" />
+            <MenuItem fx:id="logoutMenuItem" onAction="#logoutAction" text="Logout" />
+         </items>
+      </MenuButton>
+      <Label fx:id="ageMovie" layoutX="499.0" layoutY="574.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="showTimeLabel" layoutX="676.0" layoutY="574.0" text="Time" textFill="WHITE" />
+   </children>
+</AnchorPane>
